@@ -38,12 +38,19 @@ class Home extends Component {
     }
   };
 
+  handleKeywordClick = (keyword) => {
+    this.setState({ query: keyword }, () => {
+      this.handleSearch();
+    });
+  };
+  
   handleImageHover = (index) => {
     this.setState({ hoveredImage: index });
   };
 
   render() {
     const { query, loading, images, error, hoveredImage,searchClicked } = this.state;
+    const keywords = ["Mountain", "Flowers", "Beaches", "Cities"];
 
     return (
       <div className="home-cont">
@@ -55,7 +62,13 @@ class Home extends Component {
           </button>
         </div>
       
-        
+        <div className="keywords-container">
+          {keywords.map((keyword, index) => (
+            <button key={index} onClick={() => this.handleKeywordClick(keyword)}>
+              {keyword}
+            </button>
+          ))}
+        </div>
         {loading && (
             <div className="loader-container">
               {" "}

@@ -8,6 +8,8 @@
     color: #333; /* Adjust the color as needed */
     text-align: center; /* Center the text */
     margin-bottom: 20px; /* Add some space below the heading */
+    
+     
   }
 .searchinput-button-cont {
     display: flex;
@@ -51,13 +53,7 @@
     align-items: center;
   }
  
-/* 
-  .image-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    grid-gap: 20px;
-  }
-   */
+
   .image {
     position: relative;
     overflow: hidden;
@@ -87,5 +83,28 @@
   
   .image:hover .image-details {
     opacity: 1; 
+  }
+  .keywords-container {
+    display: flex;
+    justify-content: center; 
+    margin: 40px; 
+  }
+  
+  .keywords-container button {
+    padding: 10px 20px;
+    margin: 0 10px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .keywords-container button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .keywords-container button:focus {
+    outline: none; 
   }
   
