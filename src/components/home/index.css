@@ -4,10 +4,10 @@
 
 }
 .heading {
-    font-size: 2.5rem; /* Adjust the font size as needed */
-    color: #333; /* Adjust the color as needed */
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Add some space below the heading */
+    font-size: 2.5rem; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px; 
     
      
   }
@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
-    position: relative; /* Add position relative to the image container */
+    position: relative; 
   }
   
   .loader-container {
@@ -106,5 +106,35 @@
   
   .keywords-container button:focus {
     outline: none; 
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center; 
+    margin: 20px; 
+  }
+  
+  .pagination-container button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-container button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .pagination-container button:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
+  }
+  
+  .pagination-container span {
+    margin: 0 10px; 
+    font-size: 1rem; 
   }
   
